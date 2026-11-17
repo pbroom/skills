@@ -1,0 +1,4 @@
+interface:
+  display_name: "slop-lop"
+  short_description: "Find and fix generic design choices that get in the way"
+  default_prompt: "Use $slop-lop to review this work and fix the design choices that get in the way."
