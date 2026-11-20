@@ -5,7 +5,13 @@ description: Find and fix AI slop in interfaces, copy, and changed code. Use whe
 
 # Slop Lop
 
-Work on the target the user names. With no target, start with the current diff, including uncommitted work, or the artifact already under discussion. Ask for a target if neither exists. Apply justified fixes by default. For a critique, audit-only request, or read-only artifact, give specific proposed edits.
+Work on the target the user names. With no target, start with the current diff, including uncommitted work, or the artifact already under discussion. Ask for a target if neither exists. Apply justified fixes by default. For capture-only work, a critique, an audit-only request, or a read-only artifact, give specific proposed edits.
+
+## Check saved profiles
+
+Discover [saved profiles](references/profiles.md) for the target's project and the user. Read the full profile when its scope matches the work under review. Check the named surface and state for the failure, and inspect the behavior the profile says to preserve. A text match can help you find a candidate. Confirm the user impact in context before editing.
+
+Report the applicable profile IDs and whether each had a confirmed failure, passed within the inspected scope, or remains unverified. For a repair, show the before and after evidence and check that the intended use still works. Use `$target-lock` when the user asks to save an example for future reviews.
 
 ## Decide what earns an edit
 

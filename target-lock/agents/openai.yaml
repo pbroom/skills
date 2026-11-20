@@ -1,0 +1,4 @@
+interface:
+  display_name: "target-lock"
+  short_description: "Save an example as a reusable slop check"
+  default_prompt: "Use $target-lock to turn this annotated example into a check and show me the result."
