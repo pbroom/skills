@@ -25,14 +25,19 @@ To use a skill in a single project, copy its folder into that project's `.claude
 
 ## Teach slop-lop a check
 
-Install `slop-lop` and `target-lock` together in your Codex skills directory.
+Install `slop-lop` and `target-lock` together in your agent's skills directory.
 
 ```bash
 mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 ln -s ~/pbroom-skills/slop-lop ~/pbroom-skills/target-lock "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
-Attach a screenshot, add a browser comment, or paste an example. In Codex, say `$target-lock Save this as a check for this project.` Include what bothered you and where it happened if the example leaves either unclear. Use `$slop-lop` on later reviews to replay matching [saved checks](slop-lop/references/profiles.md).
+```bash
+mkdir -p ~/.claude/skills
+ln -s ~/pbroom-skills/slop-lop ~/pbroom-skills/target-lock ~/.claude/skills/
+```
+
+Attach a screenshot, add a browser comment, or paste an example. In Codex, say `$target-lock Save this as a check for this project.` In Claude Code, use `/target-lock`. Include what bothered you and where it happened if the example leaves either unclear. Target Lock gets a [cross-provider review](target-lock/references/reviewer.md) and applies actionable feedback. Use slop-lop on later reviews to replay matching [saved checks](slop-lop/references/profiles.md).
 
 ## License
 
