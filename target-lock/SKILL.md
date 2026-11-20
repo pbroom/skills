@@ -7,11 +7,17 @@ description: Turn an annotated screenshot, browser comment, or written example o
 
 Read the example and the user's annotation. Identify the element or passage, the task it gets in the way of, and the condition under which it becomes a problem. Inspect the source or reproduce the state when accessible. A screenshot can show layout or copy, while behavior and cause need their own evidence. Use the user's interpretation where given. If two plausible interpretations would lead to different checks, ask which one to capture.
 
-## Save the check
+## Draft the check
 
 Use the [shared profile format](../slop-lop/references/profiles.md). Default to the project that owns the artifact. Resolve its active checkout from the target. Use the user-wide location when requested. If ownership is unclear, ask where the check belongs.
 
-List existing profiles before writing. When the same failure occurs under the same conditions at the chosen scope, refine that profile under its existing ID. A different surface or failure may need its own profile. Preserve existing exceptions and verification steps that still apply. Write the narrowest check the evidence supports, including when to keep an intentional use. Save a sanitized description. Keep raw screenshots, private links, and customer data out of profiles. Validate the saved file and confirm the normal listing finds it at the intended scope.
+List existing profiles before writing. When the same failure occurs under the same conditions at the chosen scope, refine that profile under its existing ID. A different surface or failure may need its own profile. Preserve existing exceptions and verification steps that still apply. Write the narrowest check the evidence supports, including when to keep an intentional use. Keep raw screenshots, private links, and customer data out of the draft.
+
+## Review and save
+
+Get a [cross-provider review](references/reviewer.md) for every new or revised profile. A Codex Sol or Astra draft goes to a current Claude Fable or Opus model. A Claude Fable or Opus draft goes to a current Codex Astra or Sol model. Apply feedback that makes the check clearer, better scoped, or easier to verify while preserving the user's intent. This applies to capture-only requests too.
+
+Save the revised profile, validate it, and confirm the normal listing finds it at the intended scope. If the review is blocked, save and validate the profile and report the blocker as review pending.
 
 ## Run it and show proof
 
@@ -19,4 +25,4 @@ Replay the saved check on the original or a representative occurrence using the 
 
 Use the bundled text locator for a stable literal that helps find candidates. If the defect can be asserted repeatably, reuse the target project's existing test or lint workflow when the requested changes include it. Check that the assertion detects the bad case and passes after the fix. For a visual or contextual judgment, record the state and what to inspect.
 
-Link the saved profile and report what it will check, the observed result, and what was verified after any repair. When the artifact or state can't be replayed, identify what evidence is missing and report the profile as saved with replay pending.
+Link the saved profile and report what it checks, the reviewer model and material feedback applied, what the replay found, and what was verified after any repair. When the artifact or state can't be replayed, identify what evidence is missing and report the profile as saved with replay pending.
