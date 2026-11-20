@@ -21,8 +21,8 @@ Save the revised profile, validate it, and confirm the normal listing finds it a
 
 ## Run it and show proof
 
-Replay the saved check on the original or a representative occurrence using the [slop-lop workflow](../slop-lop/SKILL.md). Record what triggered it. When the target can be edited, fix the confirmed occurrence and replay the same state. For capture-only or review-only requests, show the finding and proposed repair. Check a nearby intentional use when one is available.
+Replay the saved check on the original or a representative occurrence using the [slop-lop workflow](../slop-lop/SKILL.md). Record what triggered it. When the user's request includes repairing the artifact, fix the confirmed occurrence in the editable target and replay the same state. For capture or review requests, show the finding and proposed repair. Check a nearby intentional use when one is available.
 
 Use the bundled text locator for a stable literal that helps find candidates. If the defect can be asserted repeatably, reuse the target project's existing test or lint workflow when the requested changes include it. Check that the assertion detects the bad case and passes after the fix. For a visual or contextual judgment, record the state and what to inspect.
 
-Link the saved profile and report what it will check, the reviewer model and material feedback applied, and what was verified after any repair. When the artifact or state can't be replayed, identify what evidence is missing and report the profile as saved with replay pending.
+Link the saved profile and report what it checks, the reviewer model and material feedback applied, what the replay found, and what was verified after any repair. When the artifact or state can't be replayed, identify what evidence is missing and report the profile as saved with replay pending.
