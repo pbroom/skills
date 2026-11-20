@@ -25,4 +25,4 @@ Replay the saved check on the original or a representative occurrence using the 
 
 Use the bundled text locator for a stable literal that helps find candidates. If the defect can be asserted repeatably, reuse the target project's existing test or lint workflow when the requested changes include it. Check that the assertion detects the bad case and passes after the fix. For a visual or contextual judgment, record the state and what to inspect.
 
-Link the saved profile and report what it will check, the reviewer model and material feedback applied, and what was verified after any repair. When the artifact or state can't be replayed, identify what evidence is missing and report the profile as saved with replay pending.
+Link the saved profile and report what it checks, the reviewer model and material feedback applied, what the replay found, and what was verified after any repair. When the artifact or state can't be replayed, identify what evidence is missing and report the profile as saved with replay pending.
